@@ -1,0 +1,144 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: rgb(5, 66, 53);
+    color: aliceblue;
+}
+
+
+main{
+    background-color: rgb(10, 108, 88);
+}
+
+h1{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#game-div{
+    background-color: rgb(5, 66, 53);
+    padding: 20px;
+    margin: 30px ;  
+    border-radius: 10px; 
+    font-size: 16px;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.success{
+    background-color: green !important;
+}
+
+
+
+.container {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 900px;
+    border-radius: 10px;
+}
+
+.game-board {
+    display: grid;
+    gap: 5px;
+    margin: 20px;
+    width: min-content;
+    height: min-content;
+}
+
+.game-board div {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.black-box {
+    background-color: black !important;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+#msg{
+    font-size: 23px;
+    width: 200px;
+    height: 30px;
+    color: rgb(206, 159, 45);
+    margin-bottom: 2px;
+}
+
+#play-button {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#score-display, #timer-display, #click-timer-display {
+    margin-top: 10px;
+}
+
+
+
+.success{
+    background-color: green;
+}
+
+
+.leaderboard {
+    width: 39%;
+    height: auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(5, 66, 53);
+  }
+
+.leaderboard-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.leaderboard-header h1 {
+    margin: 0;
+}
+
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.leaderboard-table th, 
+.leaderboard-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-table th {
+    background-color: rgb(11, 31, 26);
+}
+
+
+.leaderboard-table tr:nth-child(even) {
+    background-color: rgb(11, 31, 26);
+}

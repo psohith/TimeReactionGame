@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Time Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main>
+    <h1>Reaction Time Game</h1>
+    <div class="container">
+
+        <!-- Game Portion -->
+        <div id="game-div"> 
+            <div id="level-display">Level: 1</div>
+            <div id="score-display">Score: 0</div>
+            <div id="click-timer-display">Time Left: 2000ms</div>
+            <center><div id="game-board" class="game-board"></div></center>
+            <div id="msg"></div>
+            <button id="play-button">Play</button>  
+        </div>
+
+
+        <!-- LeaderBoard portion -->
+        <div class="leaderboard">
+            <div class="leaderboard-header">
+                <h2>LeaderBoard</h2>
+            </div>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Score</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-list">
+                    <tr>
+                        <td>09</td>
+                        <td>July 10</td>
+                        <td>12:43:33</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
